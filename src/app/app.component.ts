@@ -34,7 +34,6 @@ export class AppComponent implements OnInit{
 			this.graficosService.getGraficosData(params).subscribe(
 				(data)=>{
 					this.dataResponse = data.data as unknown as Data;
-					console.log("data ",this.dataResponse)
 
 					this.chartOptions = {
 						animationEnabled: true,
